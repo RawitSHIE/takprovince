@@ -1,12 +1,19 @@
 /* index page */
 
 /* navbar */
+#bg-color{
+    /* background-color: #313c42; */
+    background-color: #050505ab;
+    color:rgb(255, 255, 255);
+}
 
 /* fullpage */
 html, body{
     height:100%;
     width:100%;
 }
+
+
 header {
     position: relative;
     display: table;
@@ -16,6 +23,13 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.cover{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .vertical-center {
@@ -40,24 +54,29 @@ header {
 }
 
 
+/* video pop-up */
+.modal-dialog{
+    width: 80%;
+}
+
 .place{
     transition-property: background, border-radius;
     transition-duration: .2s, 1s;
     transition-timing-function: linear;
     padding: 12px;
     margin: 20px 10px 20px;
+    transition: all .2s ease;
 }
 
 .place:hover{
     background: #696969;
     border-radius: 6px;
-
     box-shadow: 0 0 20px 0px #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    transition: all .2s linear;
+    
 }
 
 .place:active{
@@ -72,9 +91,64 @@ header {
     border-width: 2px;
 }
 
+.video{
+    transition: all .2s ease;
+    
+}
+.video:hover{
+
+    cursor: pointer;
+    font: inherit;
+    transform: scale(1.05);
+}
+
+.footer{
+    height: 150px;
+    background-color: #696969;
+}
 
 /* .inner-sha {
     -moz-box-shadow:    inset 0 0 20px #000000;
     -webkit-box-shadow: inset 0 0 20px #000000;
     box-shadow:         inset 0 0 20px #000000;
  } */
+
+ .hor-cen{
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+
+/*  */
+#hero-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+  
+  #hero-wrapper .carousel-wrapper,
+  #hero-carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  #hero-carousel img{
+      left: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: none;
+      width: auto;
+      height: auto;
+    
+
+  }
+  #hero-carousel i {
+    position: absolute;
+    top: 50%;
+  }
+  
+/*  */
