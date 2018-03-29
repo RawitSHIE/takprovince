@@ -89,18 +89,12 @@
     <div class="display-4 col-lg-6" style="margin:30px;">Landmarks & Moral</div>
     <div class="row justify-content-center">
 
-      <div slide="#card1" onclick="slideControll(this)" class="card place" style="width: 18rem;" id="headingOne">
-        <img class="card-img-top" src="pic/วัดพระบรมธาตุ_7.jpg" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+      <div slide="#card1" onclick="slideControll(this)" class="item1" style="width: 18rem;" id="headingOne">
+        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
       </div>
 
-      <div slide="#card2" onclick="slideControll(this)" class="card place" style="width: 18rem;" id="headingTwo">
-        <img class="card-img-top" src="pic/วัดพระบรมธาตุ_7.jpg" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+      <div slide="#card2" onclick="slideControll(this)" class="item2" style="width: 18rem;" id="headingTwo">
+        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>        
       </div>
 
       <div slide="#card3" onclick="slideControll(this)" class="card place" style="width: 18rem;" id="headingThree">
@@ -122,19 +116,31 @@
   <!-- colla -->
   <div id="go-collapse">
     <div class="collapse" id="card1" data-parent="#accordion">
-      <div class="card card-body cover" style="height: 60vh;">
+      <div class="card card-body travel1" style="height: 60vh;">
         <div class="row align-items-center" style="height:100%; color:white;">
           <div class="col-sm-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et dolorem iste rerum nobis expedita perferendis magnam mollitia
-            quam, quo eaque facilis, praesentium nemo laborum aliquam? Ipsam quisquam saepe ad distinctio?
+            <img src="" alt="">
           </div>
           <div class="col-sm-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
-            reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit fugiat.
+            <h1 class="display-3" style="color:white;">Umphang</h1>
+            <p style="margin-bottom:10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
+              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
+              fugiat.
+            </p>
+            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </div>
+
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+                Learn More
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+
     <div class="collapse" id="card2" data-parent="#accordion">
       <div class="card card-body cover" style="height: 60vh;">
         card 2
@@ -160,6 +166,13 @@
   </footer>
 
   <!-- Optional JavaScript -->
+  <script>
+    function slideControll(id) {
+      $("#go-collapse").children().collapse('hide');
+      var openThis = id.getAttribute("slide");
+      $(openThis).collapse('show');
+    }
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -168,13 +181,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-  <script>
-    function slideControll(id) {
-      $("#go-collapse").children().collapse('hide');
-      var openThis = id.getAttribute("slide");
-      $(openThis).collapse('show');
-    }
-  </script>
+
 
 
 </body>
