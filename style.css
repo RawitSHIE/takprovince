@@ -30,6 +30,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
+
+}
+
+.his-content p{
+    padding: 10px;
 }
 
 .travel1{
@@ -63,6 +68,11 @@ header {
 .vertical-center {
     display: table-cell;
     text-align: center;
+    vertical-align: middle;
+}
+
+.vertical-center-2 {
+    display: table-cell;
     vertical-align: middle;
 }
 
@@ -251,7 +261,7 @@ header {
 
 .footer{
     height: 150px;
-    background-color: #696969;
+    background-color: #000000;
 }
 
 /* .inner-sha {
