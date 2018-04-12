@@ -14,7 +14,7 @@ html, body{
 }
 
 
-header {
+.header {
     position: relative;
     display: table;
     width: 100%;
@@ -23,14 +23,18 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+  }
 
-.cover{
+.cover-his{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
 
-
+.cover-travel-1{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .his-content p{
@@ -91,7 +95,15 @@ header {
     border-width: 2px;
 }
 
-
+/* bg video */
+#bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+ 
 /* video pop-up */
 .modal-dialog{
     width: 80%;
