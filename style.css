@@ -1,5 +1,8 @@
-/* index page */
-
+/* fonts */
+@font-face {
+    font-family: title;
+    src: url("fonts/DrivingAround.ttf");
+ }
 /* navbar */
 #bg-color{
     /* background-color: #313c42; */
@@ -29,12 +32,26 @@ html, body{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .cover-travel-1{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.cover-video{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/bg-painting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin: 0px;
+}
+
+.cover-land{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url();
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .his-content p{
