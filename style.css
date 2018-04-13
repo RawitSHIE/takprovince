@@ -1,21 +1,52 @@
 /* fonts */
+
 @font-face {
     font-family: title;
     src: url("fonts/DrivingAround.ttf");
- }
+}
+
 /* navbar */
-#bg-color{
+
+#bg-color {
     /* background-color: #313c42; */
     background-color: #050505ab;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+/* nav-bar */
+
+.nav-link {
+    color: Black;
+    text-decoration: none;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+.home {
+    z-index: 1000;
+    position: fixed;
+    margin: 25px;
+    background-color: black;
+    transition: all .2s ease;
+}
+
+.home:hover {
+    transform: scale(1.05);
 }
 
 /* fullpage */
-html, body{
-    height:100%;
-    width:100%;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
 
+/* cover */
 
 .header {
     position: relative;
@@ -26,64 +57,64 @@ html, body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
-.cover-his{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
+.cover-his {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-.cover-travel-1{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
+.cover-travel-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.cover-video{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/bg-painting.jpg);
+/* video */
+
+.cover-video {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/bg-painting.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     margin: 0px;
 }
 
-.cover-land{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url();
+.cover-land {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url();
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.his-content p{
+.his-content p {
     padding: 10px;
 }
 
-.travel1{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/bg-test.jpg);
+/* collapse */
+
+.travel1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/bg-test.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-.travel2{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/วัดพระบรมธาตุ_7.jpg);
+.travel2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/วัดพระบรมธาตุ_7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-.travel3{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/_DSC1088ดอยหัวหมด_1384928528.jpg);
+.travel3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/_DSC1088ดอยหัวหมด_1384928528.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-.travel4{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/20150930-0008284.jpg);
+.travel4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/20150930-0008284.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .vertical-center {
@@ -97,27 +128,13 @@ html, body{
     vertical-align: middle;
 }
 
-.nav-link{
-    color: Black;
-    text-decoration:none;
-}
-.navbar{
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
-}
-
-.thai-logo{
-    border-color: white;
-    border-width: 2px;
-}
-
 /* bg video */
+
 #bgvid {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
 }
 
@@ -125,13 +142,14 @@ html, body{
     position: relative;
     right: 0;
     bottom: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
+
 /* video section */
 
 .banner {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(pic/videopre.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/videopre.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -140,19 +158,23 @@ html, body{
     border-radius: 0;
     height: 30vh;
 }
+
 .banner2 {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #e9ecef;
 }
+
 /* video pop-up */
-.modal-dialog{
+
+.modal-dialog {
     width: 80%;
 }
+
 /* place */
 
-.item1{
-    background-image:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(pic/bg-test.jpg); 
+.item1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(pic/bg-test.jpg);
     border-radius: 6px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,24 +184,24 @@ html, body{
     transition: all .2s ease;
 }
 
-.item1:hover{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ), url(pic/bg-test.jpg); 
+.item1:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(pic/bg-test.jpg);
     box-shadow: 0 0 20px 0px #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
-.item1:active{
+
+.item1:active {
     box-shadow: 0 0 40px 0px #aaaaaa;
     /* transform: translateY(5px); */
     /* transition: all 200ms ease-in; */
     transform: scale(1.1);
 }
 
-.item2{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(pic/วัดพระบรมธาตุ_7.jpg); 
+.item2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(pic/วัดพระบรมธาตุ_7.jpg);
     border-radius: 6px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,24 +211,24 @@ html, body{
     transition: all .2s ease;
 }
 
-.item2:hover{
-    background-image:linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ), url(pic/วัดพระบรมธาตุ_7.jpg); 
+.item2:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(pic/วัดพระบรมธาตุ_7.jpg);
     box-shadow: 0 0 20px 0px #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
-.item2:active{
+
+.item2:active {
     box-shadow: 0 0 40px 0px #aaaaaa;
     /* transform: translateY(5px); */
     /* transition: all 200ms ease-in; */
     transform: scale(1.1);
 }
 
-.item3{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(pic/_DSC1088ดอยหัวหมด_1384928528.jpg); 
+.item3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(pic/_DSC1088ดอยหัวหมด_1384928528.jpg);
     border-radius: 6px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,24 +238,24 @@ html, body{
     transition: all .2s ease;
 }
 
-.item3:hover{
-    background-image:linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ), url(pic/_DSC1088ดอยหัวหมด_1384928528.jpg); 
+.item3:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(pic/_DSC1088ดอยหัวหมด_1384928528.jpg);
     box-shadow: 0 0 20px 0px #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
-.item3:active{
+
+.item3:active {
     box-shadow: 0 0 40px 0px #aaaaaa;
     /* transform: translateY(5px); */
     /* transition: all 200ms ease-in; */
     transform: scale(1.1);
 }
 
-.item4{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(pic/20150930-0008284.jpg); 
+.item4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(pic/20150930-0008284.jpg);
     border-radius: 6px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,23 +265,23 @@ html, body{
     transition: all .2s ease;
 }
 
-.item4:hover{
-    background-image:linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ), url(pic/20150930-0008284.jpg); 
+.item4:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(pic/20150930-0008284.jpg);
     box-shadow: 0 0 20px 0px #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
-.item4:active{
+
+.item4:active {
     box-shadow: 0 0 40px 0px #aaaaaa;
     /* transform: translateY(5px); */
     /* transition: all 200ms ease-in; */
     transform: scale(1.1);
 }
 
-.place:hover{
+.place:hover {
     background: #696969;
     border-radius: 6px;
     box-shadow: 0 0 20px 0px #aaaaaa;
@@ -267,9 +289,9 @@ html, body{
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
-.place{
+
+.place {
     transition-property: background, border-radius;
     transition-duration: .2s, 1s;
     transition-timing-function: linear;
@@ -278,7 +300,7 @@ html, body{
     transition: all .2s ease;
 }
 
-.place:hover{
+.place:hover {
     background: #696969;
     border-radius: 6px;
     box-shadow: 0 0 20px 0px #aaaaaa;
@@ -286,33 +308,31 @@ html, body{
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
 
-.place:active{
+.place:active {
     box-shadow: 0 0 40px 0px #aaaaaa;
     /* transform: translateY(5px); */
     /* transition: all 200ms ease-in; */
     transform: scale(1.1);
 }
 
-.place:hover img{
+.place:hover img {
     border-color: white;
     border-width: 2px;
 }
 
-.video{
+.video {
     transition: all .2s ease;
-    
 }
-.video:hover{
 
+.video:hover {
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
 }
 
-.footer{
+.footer {
     height: 150px;
     background-color: #000000;
 }
@@ -323,72 +343,66 @@ html, body{
     box-shadow:         inset 0 0 20px #000000;
  } */
 
- .hor-cen{
-    width:100%;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+.hor-cen {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.learn{
+.learn {
     height: 6vh;
-    background-color:white;
+    background-color: white;
     color: black;
     border-radius: 10px;
     transition: 0.3s ease;
     transform: scale(1);
 }
 
-
-
-.learn:hover{
+.learn:hover {
     /* background-color: #696969; */
     box-shadow: 0 0 20px 0px #aaaaaa;
     /* color: #fff; */
     cursor: pointer;
     font: inherit;
     transform: scale(1.05);
-    
 }
 
-.learn:active{
+.learn:active {
     box-shadow: 0 0 40px 0px #aaaaaa;
     /* transform: translateY(5px); */
     /* transition: all 200ms ease-in; */
     transform: scale(1.1);
 }
 
-
 /*  */
+
 #hero-wrapper {
     height: 100%;
     width: 100%;
     position: fixed;
-  }
-  
-  #hero-wrapper .carousel-wrapper,
-  #hero-carousel {
+}
+
+#hero-wrapper .carousel-wrapper,
+#hero-carousel {
     height: 100%;
     width: 100%;
     position: absolute;
-  }
-  
-  #hero-carousel img{
-      left: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      max-width: none;
-      width: auto;
-      height: auto;
-    
+}
 
-  }
-  #hero-carousel i {
+#hero-carousel img {
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+    width: auto;
+    height: auto;
+}
+
+#hero-carousel i {
     position: absolute;
     top: 50%;
-  }
+}
 
-  
-  
 /*  */
