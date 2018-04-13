@@ -2,35 +2,228 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <!-- Animate css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- Local css/cscc -->
-    <link rel="stylesheet" href="style.css">
-    <title>Taksin</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!-- Animate css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Local css/cscc -->
+  <link rel="stylesheet" href="style.css">
+  <title>Taksin</title>
 </head>
 
 <body>
-  <!-- into -->
+  <!-- into Umphang-->
   <header class="header" style="background-color:rgba(0, 0, 0, 0.432);">
-        <div class="vertical-center">
-          <div style="background-color: transparent;">
-            <h1 class="display-1" style="color:white;">TAK</h1>
-            <blockquote class="blockquote">
-              <p class="mb-0" style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer" style="color:white;">Someone famous in
-                <cite title="Source Title">Source Title</cite>
-              </footer>
-            </blockquote>
+    <div class="vertical-center">
+      <div style="background-color: transparent;">
+        <h1 class="display-1" style="font-family:title; font-size: 10em; color:white;">UMPHANG</h1>
+        <!-- <blockquote class="blockquote">
+            <p class="mb-0" style="color:white; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer" style="color:white;">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote> -->
+      </div>
+      <video id="bgvid" style="z-index:-1000;" playsinline autoplay loop muted>
+        <source src="video/preview.mp4" type="video/mp4">
+      </video>
+    </div>
+  </header>
+
+  <!-- about Umphang -->
+  <header id="history" class="cover-his" style="padding: 20px;">
+
+    <div class="vertical-center-2">
+      <div style="background-color: transparent;">
+        <h1 class="display-1" style="font-family: title; color:white; text-align:center; padding-bottom: 50px;">Umphang District</h1>
+        <div class="row">
+          <object type="image/svg+xml" data="pic/tak-layout.svg" class="col-lg-6" style="min-height: 100px;"></object>
+          <div class="col-lg-6 vertical-center-2" style="color:white; padding:50px">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisiceing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
+              qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
+              eveniet!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
+              qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
+              eveniet!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
+              qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
+              eveniet!
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Maps -->
+  
+
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAMBOwxMp2aakBJIi-V8heH_xdD1OiMgTM
+    &q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>
+
+
+  <!-- place to go -->
+
+  <div id="landmark" class="col-lg-12 justify-content-center cover-land " style="background-color:rgb(235, 235, 235); padding: 20px;">
+    <div class="display-4 col-lg-6" style="margin:30px;">Landmarks & Moral</div>
+    <div class="row justify-content-center">
+
+      <div slide="#card1" onclick="slideControll(this)" class="item1" style="width: 18rem;" id="headingOne">
+        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+      </div>
+
+      <div slide="#card2" onclick="slideControll(this)" class="item2" style="width: 18rem;" id="headingTwo">
+        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+      </div>
+
+      <div slide="#card3" onclick="slideControll(this)" class="item3" style="width: 18rem;" id="headingThree">
+        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+      </div>
+
+      <div slide="#card4" onclick="slideControll(this)" class="item4" style="width: 18rem;" id="headingFour">
+        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- colla -->
+  <div id="go-collapse">
+    <div class="collapse" id="card1" data-parent="#accordion">
+      <div class="card card-body travel1" style="height: 60vh;">
+        <div class="row align-items-center" style="height:100%; color:white;">
+          <div class="col-sm-6">
+            <img src="" alt="">
+          </div>
+          <div class="col-sm-6">
+            <h1 class="display-3" style="color:white;">Umphang</h1>
+            <p style="margin-bottom:10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
+              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
+              fugiat.
+            </p>
+            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </div>
+            <a href="travel1.html">
+              <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px; text-decoration:none;">
+                Learn More
+              </div>
+            </a>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
+
+
+    <div class="collapse" id="card2" data-parent="#accordion">
+      <div class="card card-body travel2" style="height: 60vh;">
+        <div class="row align-items-center" style="height:100%; color:white;">
+          <div class="col-sm-6">
+            <img src="" alt="">
+          </div>
+          <div class="col-sm-6">
+            <h1 class="display-3" style="color:white;">Umphang</h1>
+            <p style="margin-bottom:10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
+              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
+              fugiat.
+            </p>
+            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </div>
+
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="collapse" id="card3" data-parent="#accordion">
+      <div class="card card-body travel3" style="height: 60vh;">
+        <div class="row align-items-center" style="height:100%; color:white;">
+          <div class="col-sm-6">
+            <img src="" alt="">
+          </div>
+          <div class="col-sm-6">
+            <h1 class="display-3" style="color:white;">Umphang</h1>
+            <p style="margin-bottom:10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
+              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
+              fugiat.
+            </p>
+            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </div>
+
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="collapse" id="card4" data-parent="#accordion">
+      <div class="card card-body travel4" style="height: 60vh;">
+        <div class="row align-items-center" style="height:100%; color:white;">
+          <div class="col-sm-6">
+            <img src="" alt="">
+          </div>
+          <div class="col-sm-6">
+            <h1 class="display-3" style="color:white;">Umphang</h1>
+            <p style="margin-bottom:10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
+              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
+              fugiat.
+            </p>
+            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </div>
+
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
+<!-- Optional JavaScript -->
+<script>
+  function slideControll(id) {
+    $("#go-collapse").children().collapse('hide');
+    var openThis = id.getAttribute("slide");
+    $(openThis).collapse('show');
+  }
+</script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
 
 </html>

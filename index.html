@@ -52,7 +52,7 @@
           </footer>
         </blockquote>
       </div>
-      <video id="bgvid" style="z-index:-1000;"playsinline autoplay loop muted>
+      <video id="bgvid" style="z-index:-1000;" playsinline autoplay loop muted>
         <source src="video/preview.mp4" type="video/mp4">
       </video>
     </div>
@@ -60,10 +60,11 @@
 
   <!-- Video -->
   <div id="video" class="col-lg-12 row justify-content-center cover-video" data-toggle="modal" style="padding: 60px;">
-    <div class="jumbotron jumbotron-fluid col-sm-10 " data-toggle="modal" data-target="#exampleModalCenter">
-      <div class="container video hor-cen">
-        <h1 class="display-4">Video Sample</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <div class="banner2 banner col-sm-10 " data-toggle="modal" data-target="#exampleModalCenter">
+      <div class="container video hor-cen" style="z-index:1000;">
+        <img src="pic/playbut.png" style="height: 100px">
+        <h1 class="display-4" style="color:white;">Video Sample</h1>
+
       </div>
     </div>
   </div>
@@ -89,31 +90,31 @@
   <header id="history" class="cover-his" style="padding: 20px;">
 
     <div class="vertical-center-2">
-        <div style="background-color: transparent;">
-            <h1 class="display-1" style="font-family: title; color:white; text-align:center; padding-bottom: 50px;">History</h1>
-            <div class="row">
-              <object type="image/svg+xml" data="pic/tak-layout.svg" class="col-sm-6" style="height:50vh"></object>
-              <div class="col-sm-6 vertical-center-2" style="color:white;">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisiceing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
-                  qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
-                  eveniet!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
-                  qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
-                  eveniet!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
-                  qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
-                  eveniet!
-                </p>
-              </div>
-    
-            </div>
+      <div style="background-color: transparent;">
+        <h1 class="display-1" style="font-family: title; color:white; text-align:center; padding-bottom: 50px;">History</h1>
+        <div class="row">
+          <object type="image/svg+xml" data="pic/tak-layout.svg" class="col-lg-6" style="min-height: 100px;"></object>
+          <div class="col-lg-6 vertical-center-2" style="color:white; padding:50px">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisiceing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
+              qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
+              eveniet!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
+              qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
+              eveniet!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut magnam, dolorum nostrum expedita corrupti commodi
+              qui ullam voluptas reiciendis temporibus. Eaque fugiat quibusdam veritatis. Animi provident assumenda recusandae
+              eveniet!
+            </p>
           </div>
+
+        </div>
       </div>
+    </div>
   </header>
 
 
@@ -274,4 +275,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
 </body>
+
 </html>
