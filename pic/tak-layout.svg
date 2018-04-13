@@ -5,8 +5,8 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
-	.st2{opacity:0.44;}
-	.st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{display:inline;opacity:0.44;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g id="Layer_3" class="st0">
 	<rect class="st1" width="1280" height="1024"/>
@@ -3361,7 +3361,7 @@ v+l7K/6Xsr/o+yv+l7K/6Xsr/peyv+l7K/6Xsr/peyrD8yLZWy4bukDeJ93+4g7P0n+mDR9Ff1j7
 f00K9NDadh6Hprmv7w/pof7T6f8AbP/Z" transform="matrix(1.2767 0 0 1.2767 -826 -270)">
 	</image>
 </g>
-<g id="Layer_4">
+<g id="Layer_4" class="st0">
 	<path class="st2" d="M311.6,54.5l9.6,10.8c0,0-1.2,2.4-2.4,2.4s-4.8,4.8-1.2,8.4c3.6,3.6,25.3,31.3,27.7,32.5
 		c2.4,1.2,20.5,18.1,21.7,18.1s0,3.6,0,3.6l2.4,4.8c0,0,2.4,1.2,2.4,3.6s2.4,3.6,2.4,3.6l3.6,2.4l6,1.2c0,0,4.8,1.2,4.8,6
 		c0,4.8,8.4,2.4,8.4,2.4s10.8,13.3,15.7,19.3c4.8,6,6,4.8,6,6c0,1.2-2.4,2.4-2.4,3.6c0,1.2,10.8,13.3,12.1,13.3c1.2,0,6-1.2,8.4,1.2
