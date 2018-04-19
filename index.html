@@ -19,7 +19,7 @@
 <body>
   <!-- navvv -->
 
-  <nav class="navbar navbar-expand-lg" id="bg-color" style="width:100%">
+  <nav class="navbar navbar-expand-lg" id="bg-color" style="width:100%; color:white;">
     <a class="navbar-brand" href="#">TAK</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -27,66 +27,93 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#video" style="color: white">Video</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Lorem</a>
+          <a class="nav-link" href="#history " style="color: white">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#landmark" style="color: white">Landmark</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#map" style="color: white">Map</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- into -->
-  <header class="header cover" style="padding: 20px; ">
+  <header class="header" style="background-color:rgba(0, 0, 0, 0.432);">
     <div class="vertical-center">
-      <div class="" style="background-color: transparent;">
-        <h1 class="display-1 animated bounceInDown" style="color:white;">Let's go TAK</h1>
+      <div style="background-color: transparent;">
+        <h1 class="display-1" style="font-family:title; font-size: 10em; color:white;">TAK</h1>
         <blockquote class="blockquote">
-          <p class="mb-0" style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <p class="mb-0 thai" style="color:white; font-size: 20px;">“ธรรมชาติน่ายล ภูมิพลเขื่อนใหญ่ พระเจ้าตากเกรียงไกร เมืองไม้และป่างาม”</p>
           <footer class="blockquote-footer" style="color:white;">Someone famous in
             <cite title="Source Title">Source Title</cite>
           </footer>
         </blockquote>
       </div>
+      <video id="bgvid" style="z-index:-1000;" playsinline autoplay loop muted>
+        <source src="video/real2.mp4" type="video/mp4">
+      </video>
     </div>
   </header>
 
-
   <!-- Video -->
-  <div class="col-lg-12 row justify-content-center" data-toggle="modal" style="padding: 60px;">
-    <div class="jumbotron jumbotron-fluid col-sm-10 " data-toggle="modal" data-target="#exampleModalCenter">
-      <div class="container video hor-cen">
-        <h1 class="display-4">Video Sample</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  <div id="video" class="col-lg-12 row justify-content-center cover-video" data-toggle="modal" style="padding: 60px;">
+    <div class="banner2 banner col-sm-10 " data-toggle="modal" data-target="#exampleModalCenter">
+      <div class="container video hor-cen" style="z-index:1000;">
+        <img src="pic/playbut.png" style="height: 100px">
+        <h1 class="display-4" style="color:white;">Video Present</h1>
+
       </div>
     </div>
   </div>
 
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div style="height:90vh" class="modal-content">
+      <div style="height:90vh;" class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" style="float:right; padding-right:10px">&times;</span>
         </button>
-        <div class="modal-body col-12" style="height:100%; width:90vh;">
-          <iframe class="col-12" style="height:100%" src="https://www.youtube.com/embed/JN-suUcRdqQ?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-            allowfullscreen></iframe>
-        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <!-- <iframe class="embed-responsive-item" src="video/real2.mp4"></iframe> -->
+        </div>        
       </div>
     </div>
   </div>
 
 
+
+
+  <!-- About Tak -->
+  <header id="history" class="cover-his vertical-center-2" style="padding: 20px;">
+    <h1 class="display-1" style="font-family: title; color:white; text-align:center; padding-bottom: 50px; margin-top: 20px;">ABOUT TAK</h1>
+    <div class="row">
+      <object type="image/svg+xml" data="pic/tak-layout.svg" class="col-lg-6" style="min-height: 40vh; max-height: 50vh;"></object>
+      <div class="col-lg-6 vertical-center-2" style="color:white; padding:50px">
+        <p class="thai" style="text-indent: 2em;">
+            เป็นจังหวัดในภาคตะวันตกหรือบางแห่งจัดอยู่ในภาคเหนือตอนล่างของไทย มีพื้นที่มากเป็นอันดับ 4 ของประเทศ มีพื้นที่มากถึง 16,406.65 ตารางแต่มีประชากรเบาบางที่สุดเป็นอันดับ 2 ของประเทศ นับเป็นจังหวัดชายแดนที่สำคัญอีกจังหวัดหนึ่งของไทย มีประวัติศาสตร์เก่าแก่นับแต่สมัยกรุงสุโขทัย ทั้งยังมีแหล่งท่องเที่ยวทางธรรมชาติและวัฒนธรรมที่งดงามหลายแห่งด้วย 
+        </p>
+        <p class="thai" style="text-indent: 2em;">
+            สภาพภูมิประเทศของจังหวัดตากเป็นพื้นที่ตามแนวเทือกเขา โดยมีเทือกเขาถนนธงชัยกั้นกลาง ทำให้มีความหลากหลายทางสภาพภูมิอากาศทำให้มีป่าไม้ น้ำตก และลำธาร เกิดขึ้นมากมาย แหล่งท่องเที่ยวจังหวัดตากส่วนใหญ่จึงเป็นแหล่งท่องเที่ยวทางธรรมชาติ ดั่งคำขวัญประจำจังหวัดคือ 
+        </p>
+        <p class="thai" style="text-indent: 2em;">
+          “ธรรมชาติน่ายล ภูมิพลเขื่อนใหญ่ พระเจ้าตากเกรียงไกร เมืองไม้และป่างาม”
+        </p>
+      </div>
+    </div>
+  </header>
+
+
+
+
   <!-- place to go -->
 
-  <div class="col-lg-12 justify-content-center inner-sha" style="background-color:rgb(235, 235, 235); padding: 20px;">
-    <div class="display-4 col-lg-6" style="margin:30px;">Landmarks & Moral</div>
+  <div id="landmark" class="col-lg-12 justify-content-center cover-land " style="background-color:rgb(235, 235, 235); padding: 20px;">
+    <div class="display-4" style="margin:30px; font-family: title; text-align:center;">Landmarks & Moral</div>
     <div class="row justify-content-center">
 
       <div slide="#card1" onclick="slideControll(this)" class="item1" style="width: 18rem;" id="headingOne">
@@ -94,53 +121,69 @@
       </div>
 
       <div slide="#card2" onclick="slideControll(this)" class="item2" style="width: 18rem;" id="headingTwo">
-        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+        <h4 class="hor-cen vertical-cen display-4">BH Dam</h4>
       </div>
 
       <div slide="#card3" onclick="slideControll(this)" class="item3" style="width: 18rem;" id="headingThree">
-        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+        <h4 class="hor-cen vertical-cen display-4">Park</h4>
       </div>
 
       <div slide="#card4" onclick="slideControll(this)" class="item4" style="width: 18rem;" id="headingFour">
-        <h4 class="hor-cen vertical-cen display-4">Umphang</h4>
+        <h4 class="hor-cen vertical-cen display-4">Bridge</h4>
       </div>
 
     </div>
   </div>
+
+
   <!-- colla -->
   <div id="go-collapse">
     <div class="collapse" id="card1" data-parent="#accordion">
-      <div class="card card-body travel1" style="height: 60vh;">
-        <div class="row align-items-center" style="height:100%; color:white;">
-          <div class="col-sm-6">
-            <img src="" alt="">
-          </div>
-          <div class="col-sm-6">
-            <h1 class="display-3" style="color:white;">Umphang</h1>
-            <p style="margin-bottom:10px;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
-              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
-              fugiat.
-            </p>
-            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-            </div>
+      <div class="travel1 row align-items-center" style="padding: 30px; margin-right: 0px;margin-left: 0px;">
+        <div class="col-lg-6 vertical-center">
+          <object type="image/svg+xml" data="pic/umphang-layout.svg" class="col-lg-6" style="min-height: 100px; max-height: 50vh;"></object>
+          <img src="" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-3" style="color:white;">Umphang</h1>
+          <p class="thai" style="margin-bottom:10px; color: white">
+            เขตรักษาพันธุ์สัตว์ป่าอุ้มผาง  มีพื้นที่ 1,619,280ไร่  เป็นเขตป่าอนุรักษ์เพื่อการสงวนและรักษาทรัพยากรธรรมชาติและเป็นผืนป่าตะวันตกที่เป็นต้นกำเนิดของแหล่งมรดกโลก  พื้นที่ส่วนใหญ่เป็นภูเขาสูงสลับซับซ้อน  อากาศจะหนาวและเย็นมากในระหว่างเดือนพฤศจิกายน ถึงเดือนกุมภาพันธ์ พรรณไม้ส่วนใหญ่เป็นป่าดงดิบ ป่าผลัดใบซึ่งแซมไปด้วยสัก ไม้เนื้อแข็ง ฟต้นเต็งรัง และอื่น ๆ สัตว์ป่าที่พบเห็น ได้แก่ เสือลายเมฆ สมเสร็จ เลียงผา เหยี่ยว นกกระทุง ผีเสื้อและนกหลายชนิด ซึ่งรวมทั้งนกเงือกหลากสีหายากมากมาย พื้นที่บางส่วนของเขตรักษาพันธ์ุสัตว์ป่าอุ้มผางยังเป็นที่อยู่อาศัยของชาวกะเหรี่ยง ม้ง ลีซอ เมี่ยน และลาหู่
+อีกด้วย เขตรักษาพันธุ์สัตว์ป่าแห่งนี้ยังถือเป็นที่กำเนิดของน้ำตกหลายแห่ง เช่น น้ำตกทีลอจอ น้ำตกทีลอเล และน้ำตกที่มีชื่อเสียงมากที่สุด น้ำตกทีลอซู
 
-            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+          </p>
+          <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+            <cite title="Source Title">Source Title</cite>
+          </div>
+          <a href="travel1.html">
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px; text-decoration:none;">
               Learn More
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
 
     <div class="collapse" id="card2" data-parent="#accordion">
-      <div class="card card-body travel2" style="height: 60vh;">
-        <div class="row align-items-center" style="height:100%; color:white;">
-          <div class="col-sm-6">
-            <img src="" alt="">
+      <div class="travel2 row align-items-center" style="margin-right: 0px;margin-left: 0px;padding: 30px;">
+        <div class="col-lg-6 vertical-center">
+          <object type="image/svg+xml" data="pic/umphang-layout.svg" class="col-lg-6" style="min-height: 100px; max-height: 60vh;"></object>
+          <img src="" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-3" style="color:white;">Bhumibol Dam</h1>
+          <p class="thai" style="margin-bottom:10px; color: white">
+            เขื่อนภูมิพล เดิมมีชื่อว่า เขื่อนยันฮี เป็นเขื่อนเอนกประสงค์แห่งแรกในประเทศไทย ต่อมาเมื่อวันที่ 25 กรกฏาคม 2500 พระบาทสมเด็จพระเจ้าอยู่หัวฯ 
+            ทรงพระราชทานพระปรมาภิไธย ให้ชื่อว่าเขื่อนภูมิพล เขื่อนภูมิพลเป็นเขื่อนคอนกรีตโค้งแห่งเดียวที่มีขนาดใหญ่ที่สุดในประเทศไทย และเป็นอันดับ 8 ในเอเชียตะวันออกเฉียงใต้ 
+            เขื่อนภูมิพลสร้างปิดกั้นลำน้ำปิงที่บริเวณเขาแก้ว อำเภอสามเงา จังหวัดตาก เพื่อใช้ประโยชน์ในการผลิตพลังงานไฟฟ้า, ชลประทาน, เพาะพันธุ์สัตว์นํ้าจืด 
+            และพื้นที่บริเวณโดยรอบเขื่อนภูมิพลยังเป็นสถานที่ท่องเที่ยวอีกด้วย นักท่องเที่ยวสามารถเดินทางไปเที่ยวชมแหล่งท่องเที่ยวตามเกาะต่างๆรอบๆเขื่อนได้โดยการเช่าเรือของเขื่อนได้ 
+            บริเวณเหนืออ่างเก็บนํ้าเขื่อนภูมิพลคือเขตป่าสงวนแห่งชาติแม่ตื่น เป็นเส้นทางเดินเท้าศึกษาธรรมชาติของสภาพป่าเต็งรัง ป่าเบญจพรรณ ความหลากหลายของเขาหินลำห้วย และน้ำตก ตลอดจนการฟื้นฟูสภาพป่า 
+            เพื่อให้นักท่องเที่ยวมีโอกาสได้สัมผัสธรรมชาติอย่างใกล้ชิด อีกทั้งยังช่วยส่งเสริมการท่องเที่ยวเชิงอนุรักษ์การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย
+          </p>
+          <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+            <cite title="Source Title">Source Title</cite>
           </div>
+<<<<<<< HEAD
           <div class="col-sm-6">
             <h1 class="display-3" style="color:white;">Umphang</h1>
             <p style="margin-bottom:10px;">
@@ -153,65 +196,69 @@
             </div>
 
             <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+=======
+          <a href="bhumibol.html">
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px; text-decoration:none;">
+>>>>>>> 75464b760aba60d92465f960d1711187d1dc4cab
               Learn More
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
 
     <div class="collapse" id="card3" data-parent="#accordion">
-      <div class="card card-body travel3" style="height: 60vh;">
-        <div class="row align-items-center" style="height:100%; color:white;">
-          <div class="col-sm-6">
-            <img src="" alt="">
+      <div class="travel3 row align-items-center" style=" padding: 30px; margin-right: 0px;margin-left: 0px;">
+        <div class="col-lg-6 vertical-center">
+          <object type="image/svg+xml" data="pic/umphang-layout.svg" class="col-lg-6" style="min-height: 100px; max-height: 50vh;"></object>
+          <img src="" alt="">
+        </div>
+        <div class="col-lg-5">
+          <h1 class="display-3" style="color:white;">Taksin Park</h1>
+          <p class="thai" style="margin-bottom:10px; color: white">
+            อุทยานแห่งชาติตากสินมหาราช ตั้งอยู่ในท้องที่ 2 อำเภอ คือ อำเภอเมืองตาก และอำเภอแม่สอด ติดถนนทางหลวงแผ่นดินหมายเลข 105 ห่างจากตัวอำเภอเมืองตากประมาณ 35 กิโลเมตร ซึ่งประกาศทับซ้อนป่าสงวนแห่งชาติป่าแม่ละเมา ตำบลพะวอ อำเภอแม่สอด จังหวัดตาก  และประกาศทับซ้อนป่าสงวนแห่งชาติป่าแม่ท้อ–ห้วยตากฝั่งขวา ตำบลแม่ท้อ อำเภอเมือง จังหวัดตาก  มีพื้นที่ตามประกาศในราชกิจจานุเบกษาจำนวน 93,125 ไร่ แต่มีพื้นที่จริงจากการคำนวณเท่ากับ 163,750 ไร่ 
+          </p>
+          <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+            <cite title="Source Title">Source Title</cite>
           </div>
-          <div class="col-sm-6">
-            <h1 class="display-3" style="color:white;">Umphang</h1>
-            <p style="margin-bottom:10px;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
-              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
-              fugiat.
-            </p>
-            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-            </div>
-
-            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+          <a href="taksin.html">
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px; text-decoration:none;">
               Learn More
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
 
     <div class="collapse" id="card4" data-parent="#accordion">
-      <div class="card card-body travel4" style="height: 60vh;">
-        <div class="row align-items-center" style="height:100%; color:white;">
-          <div class="col-sm-6">
-            <img src="" alt="">
+      <div class="travel4 row align-items-center" style="padding: 30px; margin-right: 0px;margin-left: 0px;">
+        <div class="col-lg-6 vertical-center">
+          <object type="image/svg+xml" data="pic/umphang-layout.svg" class="col-lg-6" style="min-height: 100px; max-height: 50vh;"></object>
+          <img src="" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-3" style="color:white;">Bicentennial Bridge</h1>
+          <p class="thai" style="margin-bottom:10px; color: white">
+            สะพานสมโภชกรุงรัตนโกสินทร์ 200 ปี หรือที่เรียกกันว่า “สะพานแขวนแห่งน้ำปิง” เป็นสะพานที่สร้างขึ้นเพื่อเฉลิมฉลองการสมโภชกรุงรัตนโกสินทร์มีอายุครบ 200 ปี โดยสะพานจะเชื่อมระหว่างตัวเมืองตากและตำบลป่ามะม่วง ในอดีตสะพานนี้สามารถใช้รถจักรยานและรถจักรยานยนต์สัญจรไปมาได้ แต่ในปัจจุบันเป็นสะพานสำหรับเดินชมทิวทัศน์แม่น้ำปิง โดยเฉพาะในยามค่ำคืนที่มีการประดับไฟที่สวยงาม และนอกจากนี้ยังใช้จัดงานประเพณีลอยกระทงสายไหลประทีปพันดวงซึ่งเป็นงานประเพณีประจำท้องถิ่น บริเวณโดยรอบของสะพานจะมีสวนเฉลิมพระเกียรติฯ  ซึ่งเป็นสวนสาธารณะที่สวยงามและมีสนามกีฬาหลายประเภท ยาวตามลำน้ำปิง
+          </p>
+          <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
+            <cite title="Source Title">Source Title</cite>
           </div>
-          <div class="col-sm-6">
-            <h1 class="display-3" style="color:white;">Umphang</h1>
-            <p style="margin-bottom:10px;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis saepe adipisci, dolore blanditiis deleniti non
-              reprehenderit deserunt molestiae, culpa, quia cumque minima itaque et magni voluptates praesentium suscipit
-              fugiat.
-            </p>
-            <div class="blockquote-footer" style="color:white; margin-bottom:20px;">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-            </div>
-
-            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px;">
+          <a href="bridge.html">
+            <div class="justify-content-center learn col-sm-2 vertical-center hor-cen" style="margin-top:30px; text-decoration:none;">
               Learn More
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
-
+    <!-- Maps -->
+    <div style="height: 60vh;" id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958448.6875191703!2d97.49438258972059!3d16.521296228403546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd84df83ffea51%3A0x10346c5fa8a4b70!2sTak!5e0!3m2!1sen!2sth!4v1523631649420"
+        style="width: 100%; height: 100%; margin: 0%; padding: 0px;" allowfullscreen></iframe>
+    </div>
     <!-- footer -->
     <footer>
       <div class="col-12 footer">
@@ -234,10 +281,6 @@
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
-
-
-
-
 </body>
 
 </html>
