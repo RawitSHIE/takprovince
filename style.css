@@ -533,4 +533,69 @@ body {
     top: 50%;
 }
 
-/*  */
+/* footer */
+.custom-j div{
+    color: rgb(255, 255, 255);
+}
+
+.cus-row{
+    padding: 5px;
+}
+
+.custom-j{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.over {
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.over:hover {
+    background: #696969;
+    border-radius: 6px;
+
+    box-shadow: 0 5px 0 #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    transition: all .1s linear;
+  }
+
+.over:active {
+    box-shadow: 0 3px 0 #aaaaaa;
+    transform: translateY(3px);
+  }
+  
+
+.img{
+    background-image: url('./pic/github-svg.svg');
+    background-size: 100px 100px;
+    transition-property: background-image;
+    transition-duration: .1s, .1s;
+    transition-timing-function: linear;
+}
+
+.over:hover .img{
+    background-image: url('./pic/logo-2.png');
+    background-size: 100px 100px;
+    transition-property: background-image;
+    transition-duration: .1s, .1s;
+    transition-timing-function: linear;
+    
+}
+
+.over:active .img{
+    background-image: url('./pic/logo-3.png');
+    background-size: 100px 100px;
+}
+
