@@ -9,6 +9,7 @@
     font-family: thai-light;
     src: url("fonts/sukhumvitset-thin-webfont.ttf");
 }
+
 .thai {
     font-family: thai-light;
     font-size: 15px;
@@ -111,12 +112,11 @@ body {
 }
 
 .cover-his-temple {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/20160418114029_0.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pic/20160418114029_0.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
-
 
 .cover-travel-1 {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://travel.mthai.com/app/uploads/2015/11/12241335_10205562847493960_1475964416873773825_n.jpg);
@@ -534,21 +534,21 @@ body {
 }
 
 /* footer */
-.custom-j div{
+
+.custom-j div {
     color: rgb(255, 255, 255);
 }
 
-.cus-row{
+.cus-row {
     padding: 5px;
 }
 
-.custom-j{
+.custom-j {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0px;
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .over {
@@ -559,25 +559,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
 .over:hover {
     background: #696969;
     border-radius: 6px;
-
     box-shadow: 0 5px 0 #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
     transition: all .1s linear;
-  }
+}
 
 .over:active {
     box-shadow: 0 3px 0 #aaaaaa;
     transform: translateY(3px);
-  }
-  
+}
 
-.img{
+.img {
     background-image: url('./pic/github-svg.svg');
     background-size: 100px 100px;
     transition-property: background-image;
@@ -585,17 +584,15 @@ body {
     transition-timing-function: linear;
 }
 
-.over:hover .img{
+.over:hover .img {
     background-image: url('./pic/logo-2.png');
     background-size: 100px 100px;
     transition-property: background-image;
     transition-duration: .1s, .1s;
     transition-timing-function: linear;
-    
 }
 
-.over:active .img{
+.over:active .img {
     background-image: url('./pic/logo-3.png');
     background-size: 100px 100px;
 }
-
